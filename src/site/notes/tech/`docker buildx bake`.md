@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tech/docker-buildx-bake/","title":"`docker buildx bake`","tags":["TIL"]}
+{"dg-publish":true,"permalink":"/tech/docker-buildx-bake/","title":"`docker buildx bake`","tags":["TIL"],"created":"2025-10-30T16:14:09.861-05:00"}
 ---
 
 I've wasted so much time writing individual `build.sh`s for projects when I coulda been `docker buildx bake`ing this whole time!
@@ -8,7 +8,7 @@ https://docs.docker.com/reference/cli/docker/buildx/bake/
 
 Basically, Bake gives you a place to define a bunch of docker build targets:
 
-```
+```hcl
 target "salesforce-package-info" {
     context = "."
     dockerfile = "Dockerfile"
@@ -34,14 +34,14 @@ target "checkin-usage" {
 
 With this bake file (written in [HCL](https://github.com/hashicorp/hcl)), I can do the following (in the same directory as the bake file):
 
-```
+```bash
 docker buildx bake salesforce-package-info
 docker buildx bake salesforce-package-info --push
 ```
 
 And docker will translate that into a command very similar to:
 
-```
+```bash
 docker buildx build \
     --build-arg SRC_ROOT="./salesforce-package-info"
     --build-arg APP_ROOT="./salesforce-package-info/src"
