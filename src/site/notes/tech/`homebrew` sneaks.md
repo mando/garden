@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/tech/homebrew-sneaks/","title":"`homebrew` sneaks","tags":["TIL"]}
+{"dg-publish":true,"permalink":"/tech/homebrew-sneaks/","title":"`homebrew` sneaks","tags":["TIL"],"created":"2025-10-12T16:10:50.817-05:00"}
 ---
+
+# `homebrew` sneaks
 
 I think I've used `homebrew` for about a million years, but only today I learned that you can use `brew install` as an alias for `brew upgrade`:
 
