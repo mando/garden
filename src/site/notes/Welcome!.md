@@ -4,7 +4,9 @@
 
 Hello!
 
-- [[tech/docker buildx bake\|docker buildx bake]]
-- [[tech/homebrew sneaks\|homebrew sneaks]]
+| File                                               |
+| -------------------------------------------------- |
+| [[tech/docker buildx bake\|docker buildx bake]] |
+| [[tech/homebrew sneaks\|homebrew sneaks]]       |
 
 { .block-language-dataview}

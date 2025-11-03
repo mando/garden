@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tech/docker-buildx-bake/","title":"`docker buildx bake`","tags":["TIL"],"noteIcon":"","created":"2025-10-30T16:14:09.861-05:00"}
+{"dg-publish":true,"permalink":"/tech/docker-buildx-bake/","title":"docker buildx bake","tags":["TIL"],"noteIcon":"","created":"2025-10-30T16:14:09.861-05:00"}
 ---
 
 I've wasted so much time writing individual `build.sh`s for projects when I coulda been `docker buildx bake`ing this whole time!
